@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: 'Fira Sans', sans-serif;
   margin: 0;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .white-text {
@@ -29,7 +30,7 @@ p {
 
 a.btn {
   background: white;
-  padding: .7em 2.5em;
+  padding: 14px 44px;
   border-radius: 100px;
   text-decoration: none;
   text-transform: uppercase;
@@ -44,7 +45,7 @@ a.btn {
 
 /* Hero section */
 .hero-main {
-  height: 100vh;
+  
   background: #C7DDEA;
   padding: 0 10px 0 10px;
   display: flex;
@@ -62,6 +63,7 @@ a.btn {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  
 }
 
 .hero-main a {
@@ -83,7 +85,25 @@ a.btn {
   background: #FAB131;
 }
 
+.hero-aside {
+  min-height: 315px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
 
+.hero-aside h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.hero-aside p {
+  font-size: 11px;
+  font-weight: bold;
+}
 
 /* Navigation */
 
@@ -106,8 +126,41 @@ a.btn {
 /* Map section */
 
 /* ~~~~~~~~~~~~~~Media Queries Landing page ~~~~~~~~~~~~~~~~ */
-
+@media only screen and (min-width: 600px) {
 /* Hero section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  
+}
+.hero-main {
+  grid-row: span 2;
+  padding-left: 20px;
+  
+  
+}
+
+.hero-main img {
+  align-self: flex-end;
+  max-width: 90%;
+  margin-top: 0;
+}
+
+.hero-aside {
+  min-height: 0;
+}
+}
+
+@media only screen and (min-width: 800px) {
+  .hero-main {
+    padding-left: 100px;
+  }
+  .hero-main p {
+    max-width: 35ch;
+  }
+}
+
 
 /* Navigation */
 
