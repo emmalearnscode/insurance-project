@@ -110,6 +110,28 @@ a.btn {
 /* Financial safety net */
 
 /* About us */
+.about-us {
+  background: #fab131;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.about-us h1 {
+  color: white;
+  font-size: 45px;
+  margin-bottom: 30px;
+  
+}
+
+.about-us p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  
+  text-align: center;
+}
 
 /* How it works */
 
@@ -150,6 +172,15 @@ a.btn {
 .hero-aside {
   min-height: 0;
 }
+/* About us */
+.about-us {
+  padding: 180px 50px;
+}
+
+.about-us p {
+  max-width: 50%;
+}
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -166,7 +197,7 @@ a.btn {
 
 /* Financial safety net */
 
-/* About us */
+
 
 /* How it works */
 
