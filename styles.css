@@ -147,6 +147,33 @@ a.btn {
 
 /* Map section */
 
+
+.address {
+  background: #FAB131;
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.address h1 {
+  color: white;
+  font-size: 45px;
+  
+}
+
+.address p {
+color: white;
+font-size: 14px;
+font-weight: 500;
+}
+
+.map-img-small {
+  max-width: 100%;
+}
+
+.map-img {
+  display: none;
+}
+
 /* ~~~~~~~~~~~~~~Media Queries Landing page ~~~~~~~~~~~~~~~~ */
 @media only screen and (min-width: 600px) {
 /* Hero section */
@@ -181,6 +208,7 @@ a.btn {
   max-width: 50%;
 }
 
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -206,9 +234,33 @@ a.btn {
 /*Footer box*/
 
 /* ~~~~~~~~~~~~~~ Media Queries Contact page ~~~~~~~~~~~~~~~~ */
-
-/* Hero section */
+@media only screen and (min-width: 602px) {
+ /* Hero section */
 
 /* Contact section */
 
-/* Map section */
+
+/* Map section */ 
+.map-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 48px);
+}
+
+.address {
+  grid-row: 2/span 4;
+  grid-column: 2 / span 4;
+  z-index: 2;
+}
+
+.map-img {
+  max-width: 100%;
+  display: block;
+  grid-column: 1/-1;
+  grid-row: 1 / 9;
+}
+
+.map-img-small {
+  display: none;
+}
+}
