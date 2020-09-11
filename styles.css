@@ -1,11 +1,16 @@
 /* General CSS which affects whole page */
-
-html {
+* {
+  margin:0;
+  padding:0;
   box-sizing: border-box;
+}
+html {
+  font-size:62.5%;
 }
 
 body {
-  margin: 0;
+  font-size: 1.6em;
+  /* line-height: 1.6em; */
 }
 
 .wrapper {
@@ -15,7 +20,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Frank Ruhl Libre', serif;
-  margin: 0;
+}
+.heading {
+  font-size: 3em;
+  line-height: 1em;
 }
 
 p {
@@ -40,6 +48,9 @@ a.btn {
   color: black;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1)
 }
+
+
+
 
 /* ~~~~~~~~~~~~~~Landing page ~~~~~~~~~~~~~~~~ */
 
@@ -83,6 +94,7 @@ a.btn {
 
 .hero-join-today {
   background: #FAB131;
+
 }
 
 .hero-aside {
@@ -106,8 +118,109 @@ a.btn {
 }
 
 /* Navigation */
+nav {
+  padding: 2rem;
+  display: none;
+}
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
 
+.nav-menu__item a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+.nav-menu__item a:hover {
+  color: #000;
+}
 /* Financial safety net */
+.safety-net {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+}
+.safety-net__heading {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  overflow: hidden;
+}
+.safety-net__heading h1 {
+  width: 12ch;
+}
+.safety-net__heading a {
+  display: none;
+}
+.safety-net__information {
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+.safety-net__information p {
+  line-height: 1.6em;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+}
+
+.safety-net-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8rem;
+  column-gap: 2rem;
+  justify-content: center;
+  margin-top:5rem;
+  margin-bottom: 7rem;
+}
+
+.safety-net-card__img {
+  min-width: 90%;
+  min-height: 15rem;
+  margin-top: -4rem;
+  background-position: center 1rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0,0,0,.3);
+}
+.img-child {
+  background-color: rgb(173, 216, 230); 
+  background-image: url("./img/child.png");
+  background-size: 9rem;
+}
+.img-adult {
+  background-color: #FAB131;
+  background-image: url("./img/adult.png");
+  background-size: 10rem;
+
+}
+.img-old {
+  background-color: #F17949;
+  background-image: url("./img/old.png");
+}
+
+.safety-net-card {
+  background-color: #fff;
+  display: flex;
+  max-width: 29rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  border-radius: 4px;
+}
+.safety-net-card h2 {
+  padding-top: 2rem;
+}
+.safety-net-card p {
+  font-weight: 900;
+  text-align: center;
+  padding: 0 2rem 6rem 2rem;
+  color:rgba(0, 0, 0, 0.4);
+  font-size: .8em;
+}
 
 /* About us */
 .about-us {
@@ -129,7 +242,6 @@ a.btn {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 30px;
-  
   text-align: center;
 }
 
@@ -173,6 +285,7 @@ font-weight: 500;
 .map-img {
   display: none;
 }
+
 
 /* ~~~~~~~~~~~~~~Media Queries Landing page ~~~~~~~~~~~~~~~~ */
 @media only screen and (min-width: 600px) {
@@ -222,10 +335,47 @@ font-weight: 500;
 
 
 /* Navigation */
+@media only screen and (min-width: 600px) {
+  nav {
+    display: block
+  }
+}
 
 /* Financial safety net */
 
+@media only screen and (min-width: 798px) {
 
+  .safety-net__heading {
+    margin:0 auto 10rem auto;
+    row-gap: 6rem;
+    padding-top:8rem;
+    padding-left: 5rem;
+    
+  }
+
+  .safety-net__information {
+    margin: 0 auto;
+    padding: 8rem 2rem 0 0;
+
+  }
+
+  .safety-net__heading a {
+    display: block;
+    padding:1.5rem;
+    width: 13.2rem;
+    text-align: center;
+    
+  }
+  .safety-net__information p {
+    width: 30ch;
+  }
+}
+
+@media only screen and (min-width: 910px) {
+  .safety-net-wrapper {
+    max-height: 12vh;
+  }  
+}
 
 /* How it works */
 
