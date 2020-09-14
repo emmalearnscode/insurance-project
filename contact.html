@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Insurance Contact Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="wrapper">
-  <header>
-<!--Hero section-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Contact Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <!--Hero section-->
 
+        <!--Navigation (same as landing page)-->
+        <nav>
+          <ul class="nav-menu">
+            <li class="nav-menu__item">
+              <a href="index.html" class="nav-menu__link">Home</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#" class="nav-menu__link">Our offer</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#" class="nav-menu__link">Why us</a>
+            </li>
+            <li class="nav-menu__item">
+              <a
+                href="contact.html"
+                class="nav-menu__link nav-menu__link--active"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-<!--Navigation (same as landing page)-->
+      <main>
+        <!--Contact form section-->
+        <section class="contact">
+          <h1 class="heading white-text contact--ch15">Whats on your mind?</h1>
+          <form action="/" method="POST">
+            <div class="form-controller">
+              <div class="form-controller__input">
+                <label for="email" class="form-controller__label--grey"
+                  >Your email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-controller__input form-controller__input--focus-border-red"
+                />
+              </div>
+              <div class="form-controller__input">
+                <label for="message" class="form-controller__label--grey"
+                  >Your message</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="35"
+                  rows="10"
+                  class="form-controller__input--focus-border-red"
+                ></textarea>
+              </div>
+              <button type="submit" id="js-contact-submit" class="btn">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </section>
+        <!--Map section-->
+        <section class="map-section">
+          <div class="address">
+            <h1>Come visit us!</h1>
+            <p>2219 Griffin Street</p>
+            <p>San Francisco</p>
+          </div>
+          <img
+            src="./img/map-small.png"
+            class="map-img-small"
+            alt="Map of area surrounding 2219 Griffin Street, San Francisco"
+          />
+          <img
+            src="./img/map.png"
+            class="map-img"
+            alt="Map of area surrounding 2219 Griffin Street, San Francisco"
+          />
+        </section>
+      </main>
 
-  </header>
-
-  <main>
-    <!--Contact form section-->
-
-
-    <!--Map section-->
-    <section class="map-section">
-      <div class="address">
-        <h1>Come visit us!</h1>
-        <p>2219 Griffin Street</p>
-        <p>San Francisco</p>
-      </div>
-      <img src="./img/map-small.png" class="map-img-small" alt="Map of area surrounding 2219 Griffin Street, San Francisco">
-      <img src="./img/map.png" class="map-img" alt="Map of area surrounding 2219 Griffin Street, San Francisco">
-    </section>
-  </main>
-
-  <footer>
-    <!--Grey box (same as landing page)-->
-  </footer>
-</div> 
-</body>
+      <footer>
+        <!--Grey box (same as landing page)-->
+      </footer>
+    </div>
+  </body>
 </html>
