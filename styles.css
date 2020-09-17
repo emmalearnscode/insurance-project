@@ -218,8 +218,8 @@ nav {
   max-width: 29rem;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  row-gap: 1rem;
+  justify-content: space-evenly;
+  /* row-gap: 1rem; */
   border-radius: 4px;
 }
 .safety-net-card h2 {
