@@ -11,8 +11,8 @@ html {
 
 body {
   font-size: 1.6em;
-  background-color: #f3f3f3;
-  /* line-height: 1.6em; */
+  background-color: #c5c1c1;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .wrapper {
@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: 'Frank Ruhl Libre', serif;
 }
 .heading {
@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: 'Fira Sans', sans-serif;
   margin: 0;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -261,6 +260,7 @@ nav {
 .hiw {
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 .hiw__content {
   display: flex;
@@ -275,7 +275,7 @@ nav {
   background-color: lightblue;
 }
 .hiw__content--lg {
-  background-color: rgba(0,0,0,.1);
+  background-color: #c5c1c1;
 }
 .hiw__content--ro {
   background-color: #F17949;
@@ -488,16 +488,17 @@ font-weight: 500;
 .hero-aside {
   min-height: 0;
 }
-/* About us */
+}
+
+@media only screen and (min-width: 650px) {
+    /* About us */
 .about-us {
-  padding: 180px 50px;
+  /* padding: 180px 50px; */
 }
 
 .about-us p {
-  max-width: 50%;
+  max-width: 80%;
 }
-
-
 }
 
 @media only screen and (min-width: 800px) {
@@ -507,6 +508,15 @@ font-weight: 500;
   .hero-main p {
     max-width: 35ch;
   }
+
+  /* About us */
+.about-us {
+  padding: 180px 50px;
+}
+
+.about-us p {
+  max-width: 50%;
+}
 }
 
 
