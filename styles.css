@@ -335,8 +335,18 @@ footer {
 /* ~~~~~~~~~~~~~~Contact page ~~~~~~~~~~~~~~~~ */
 
 /* Hero section */
+.title {
+  background: #C7DDEA;
+  display: grid;
+  justify-items: center;
+align-items: flex-start;
+}
 
-/* Contact section */
+.title h1 {
+  font-size: 45px;
+  margin: 50px 0;
+}
+
 
 .contact {
   background-color: rgba(0, 0, 0, 0.4);
@@ -569,8 +579,57 @@ font-weight: 500;
   }
 
 }
-@media only screen and (min-width: 602px) {
- /* Hero section */
+
+@media only screen and (min-width: 700px){
+  .title {
+    
+    display: grid;
+    grid-template-columns: 100px repeat(2, 1fr);
+    grid-template-rows: repeat(2, 170px);
+  
+  }
+  
+  .title h1 {
+    margin: 0;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .title img {
+  grid-column: 3;
+  grid-row: 2;
+  align-self: end;
+  justify-self: start;
+  margin-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  .title {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 170px);
+  
+  }
+  
+  .title h1 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .title img {
+  grid-column: 3;
+  grid-row: 2;
+  
+  align-self: end;
+  
+  }
+}
+
+
+@media only screen and (min-width: 620px) {
+
 
 
 
