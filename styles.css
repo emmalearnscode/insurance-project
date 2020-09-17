@@ -492,9 +492,7 @@ font-weight: 500;
 
 @media only screen and (min-width: 650px) {
     /* About us */
-.about-us {
-  /* padding: 180px 50px; */
-}
+
 
 .about-us p {
   max-width: 80%;
