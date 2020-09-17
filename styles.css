@@ -11,6 +11,7 @@ html {
 
 body {
   font-size: 1.6em;
+  background-color: #f3f3f3;
   /* line-height: 1.6em; */
 }
 
@@ -257,7 +258,52 @@ nav {
 }
 
 /* How it works */
+.hiw {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hiw__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+  min-height: 40vh;
+  text-align: center;
+  padding: 2rem;
+}
+.hiw__content--lb {
+  background-color: lightblue;
+}
+.hiw__content--lg {
+  background-color: rgba(0,0,0,.1);
+}
+.hiw__content--ro {
+  background-color: #F17949;
+}
 
+.hiw__info {
+  margin: auto 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+.hiw__info--cb {
+  color: #000;
+}
+.hiw__info--ch12 {
+  width: 12ch;
+}
+.hiw__info--ch20 {
+  width: 20ch;
+}
+
+.hiw__info--ch25 {
+  width: 25ch;
+}
+
+.hiw__step {
+  font-size: 1.8em;
+  color:rgba(0, 0, 0, 0.4);
+  align-self: flex-start;
+}
 
 
 footer {
@@ -306,38 +352,40 @@ footer {
 }
 .contact form {
   max-width: 80rem;
-  font-weight: 500;
-  letter-spacing: -1px;
+  /* font-weight: 500; */
+  /* letter-spacing: -1px; */
 }
 .contact form input {
   font-size: 1.1em;
+  letter-spacing: -1px;
 }
 
 .contact label {
   font-weight: 900;
-  font-size: 1.1em;
+  font-size: 1.3em;
 
 }
 .contact textarea {
   font-size: 1.5em;
   width: 100%;
-  display: block;
+  letter-spacing: -1px;
 }
 
 .contact .form-controller button {
   align-self: flex-end;
   background: white;
-  padding: 14px 44px;
+  padding: 20px 44px;
   border:none;
   border-radius: 100px;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   color: black;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
   margin-top: 3rem;
+  margin-right: 1rem;
 }
 /* Map section */
 
@@ -404,6 +452,7 @@ font-weight: 500;
 
 
 
+
 /* ~~~~~~~~~~~~~~Media Queries Landing page ~~~~~~~~~~~~~~~~ */
 @media only screen and (min-width: 600px) {
 /* Hero section */
@@ -461,7 +510,7 @@ font-weight: 500;
 
 /* Financial safety net */
 
-@media only screen and (min-width: 798px) {
+@media only screen and (min-width: 750px) {
 
   .safety-net__heading {
     margin:0 auto 10rem auto;
@@ -497,7 +546,12 @@ font-weight: 500;
 
 /* How it works */
 
-
+@media only screen and (min-width: 700px) {
+  .hiw__content {
+    min-width: 33.33%;
+    max-width: 33.33%;
+  }
+}
 
 /*Footer link */
 
@@ -535,6 +589,7 @@ font-weight: 500;
 
 .map-img {
   max-width: 100%;
+  min-height: 100%;
   display: block;
   grid-column: 1/-1;
   grid-row: 1 / 9;
