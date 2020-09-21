@@ -715,6 +715,6 @@ font-weight: 500;
 }
 
 /*footer*/
-footer {
+.footer__contact {
   margin-top: -10px;
 }
