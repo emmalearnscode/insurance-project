@@ -44,7 +44,7 @@ function showHideMobileNav(e) {
     mobileNavContainer.addEventListener("click", onClickBackgroundClose);
 
     // Slide in animation for the nav
-    mobileNav.style.animation = "nav-slide-in 500ms ease-in";
+    mobileNav.style.animation = "nav-slide-in 300ms ease-in";
 
     // Adds the stop scrolling class to the body element
     document.body.classList.add("stop-scrolling");
@@ -65,7 +65,7 @@ const onClickBackgroundClose = (e) => {
 
 const closeMenu = () => {
   // Slide out animation for the nav
-  mobileNav.style.animation = "nav-slide-out 500ms ease-out";
+  mobileNav.style.animation = "nav-slide-out 300ms ease-out";
 
   // Timeout so the animation have time to finnish
   setTimeout(() => {
@@ -88,5 +88,5 @@ const closeMenu = () => {
 
     // Add the open menu icon
     mobileNavIconOpen.classList.remove("js-hide-mobile");
-  }, 500);
+  }, 300);
 };
