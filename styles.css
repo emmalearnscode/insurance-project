@@ -57,7 +57,48 @@ a.btn {
 }
 
 /* ~~~~~~~~~~~~~~Landing page ~~~~~~~~~~~~~~~~ */
-
+/* Mobile Nav */
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+.mobile-menu-container {
+  position: absolute;
+  width: 100%;
+}
+.mobile-menu-container i {
+  font-size: 5rem;
+}
+#js-mobile-nav {
+  background-color: #c5c1c1;
+  width: 50%;
+  height: 100vh;
+}
+#js-mobile-nav ul{
+  list-style-type: none;
+  font-size: 1.4em;
+}
+#js-mobile-nav ul li:first-child{
+  text-align: right;
+  margin-bottom: 5rem;
+}
+#js-mobile-nav ul li {
+  margin-bottom: 3rem;
+}
+.js-hide-mobile {
+  display: none;
+}
+.js-show-mobile {
+  display: block;
+}
+@keyframes nav-slide-in {
+  from {transform: translateX(-100%);}
+  to{transform: translateX(0%);}
+}
+@keyframes nav-slide-out {
+  from {transform: translateX(0%);}
+  to{transform: translateX(-100%);}
+}
 /* Hero section */
 .hero-main {
   background: #C7DDEA;
@@ -529,6 +570,9 @@ font-weight: 500;
 @media only screen and (min-width: 600px) {
   nav {
     display: block
+  }
+  .mobile-menu-container {
+    display: none;
   }
 }
 
