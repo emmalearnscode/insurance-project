@@ -665,3 +665,8 @@ font-weight: 500;
   display: none;
 }
 }
+
+/*footer*/
+footer {
+  margin-top: -10px;
+}
