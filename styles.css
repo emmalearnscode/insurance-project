@@ -4,6 +4,7 @@
   padding:0;
   box-sizing: border-box;
 }
+
 html {
   font-size:62.5%;
   scroll-behavior: smooth;
@@ -23,10 +24,12 @@ body {
 h1, h2 {
   font-family: 'Frank Ruhl Libre', serif;
 }
+
 .heading {
   font-size: 3em;
   line-height: 1em;
 }
+
 .medium {
   font-size: 1.8em;
 }
@@ -53,14 +56,10 @@ a.btn {
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1)
 }
 
-
-
-
 /* ~~~~~~~~~~~~~~Landing page ~~~~~~~~~~~~~~~~ */
 
 /* Hero section */
 .hero-main {
-  
   background: #C7DDEA;
   padding: 0 10px 0 10px;
   display: flex;
@@ -78,8 +77,7 @@ a.btn {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
-  
-}
+ }
 
 .hero-main a {
   align-self: flex-start;
@@ -98,7 +96,6 @@ a.btn {
 
 .hero-join-today {
   background: #FAB131;
-
 }
 
 .hero-aside {
@@ -107,7 +104,6 @@ a.btn {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .hero-aside h3 {
@@ -126,16 +122,17 @@ nav {
   padding: 2rem;
   display: none;
 }
+
 .nav-menu {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
 }
 
-
 .nav-menu__item a:hover {
   color: #000;
 }
+
 .nav-menu__link{
   color:#7a7676;
   text-decoration: none;
@@ -146,29 +143,33 @@ nav {
   color: #000;
 }
 
-
 /* Financial safety net */
 .safety-net {
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-wrap: wrap;
 }
+
 .safety-net__heading {
   display: flex;
   flex-direction: column;
   padding: 3rem 2rem;
   overflow: hidden;
 }
+
 .safety-net__heading h1 {
   width: 12ch;
 }
+
 .safety-net__heading a {
   display: none;
 }
+
 .safety-net__information {
   padding: 0 2rem;
   margin-bottom: 3rem;
 }
+
 .safety-net__information p {
   line-height: 1.6em;
   color: rgba(0, 0, 0, 0.5);
@@ -179,8 +180,6 @@ nav {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  /* row-gap: 8rem; */
-  /* column-gap: 2rem; */
   justify-content: space-evenly;
   margin-top:5rem;
   margin-bottom: 7rem;
@@ -218,18 +217,19 @@ nav {
   max-width: 29rem;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-evenly; */
-  /* row-gap: 1rem; */
   border-radius: 4px;
   margin-bottom: 8rem;
 }
+
 .safety-net-card:nth-child(1),
 .safety-net-card:nth-child(2) {
   margin-right: 1rem;
 }
+
 .safety-net-card h2 {
   padding-top: 2rem;
 }
+
 .safety-net-card p {
   font-weight: 900;
   text-align: center;
@@ -251,8 +251,7 @@ nav {
   color: white;
   font-size: 45px;
   margin-bottom: 30px;
-  
-}
+  }
 
 .about-us p {
   font-size: 14px;
@@ -261,12 +260,13 @@ nav {
   text-align: center;
 }
 
-/* How it works */
+/* How it works (Abbreviated - hiw) */
 .hiw {
   display: flex;
   flex-wrap: wrap;
   background-color: #fff;
 }
+
 .hiw__content {
   display: flex;
   flex-direction: column;
@@ -276,12 +276,15 @@ nav {
   text-align: center;
   padding: 2rem;
 }
+
 .hiw__content--lb {
   background-color: lightblue;
 }
+
 .hiw__content--lg {
   background-color: #c5c1c1;
 }
+
 .hiw__content--ro {
   background-color: #F17949;
 }
@@ -290,12 +293,15 @@ nav {
   margin: auto 0;
   color: rgba(0, 0, 0, 0.7);
 }
+
 .hiw__info--cb {
   color: #000;
 }
+
 .hiw__info--ch12 {
   width: 12ch;
 }
+
 .hiw__info--ch20 {
   width: 20ch;
 }
@@ -310,20 +316,25 @@ nav {
   align-self: flex-start;
 }
 
+/*Footer */
+
 
 footer {
   height: 30vh;
   background-color: #666363;
 }
+
 .footer__top {
   background-color:#adaaaa;
   text-align: center;
   color:rgba(0, 0, 0, 0.7);
   padding-bottom: 2rem;
 }
+
 .footer__top h3 {
   margin-top: -1.8rem;
 }
+
 .footer__i {
   font-size: 3em;
 }
@@ -332,9 +343,7 @@ footer {
   text-decoration:none;
   color:rgba(0, 0, 0, 0.7);
 }
-/*Footer link */
 
-/*Footer box*/
 
 
 /* ~~~~~~~~~~~~~~Contact page ~~~~~~~~~~~~~~~~ */
@@ -344,7 +353,7 @@ footer {
   background: #C7DDEA;
   display: grid;
   justify-items: center;
-align-items: flex-start;
+  align-items: flex-start;
 }
 
 .title h1 {
@@ -352,7 +361,7 @@ align-items: flex-start;
   margin: 50px 0;
 }
 
-
+/* Contact form */
 .contact {
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
@@ -402,9 +411,8 @@ align-items: flex-start;
   margin-top: 3rem;
   margin-right: 1rem;
 }
+
 /* Map section */
-
-
 .address {
   background: #FAB131;
   padding: 20px;
@@ -414,8 +422,7 @@ align-items: flex-start;
 .address h1 {
   color: white;
   font-size: 45px;
-  
-}
+  }
 
 .address p {
 color: white;
@@ -466,23 +473,18 @@ font-weight: 500;
 
 
 
-
-
 /* ~~~~~~~~~~~~~~Media Queries Landing page ~~~~~~~~~~~~~~~~ */
 @media only screen and (min-width: 600px) {
 /* Hero section */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
-  
-}
+  }
+
 .hero-main {
   grid-row: span 2;
   padding-left: 20px;
-  
-  
-}
+  }
 
 .hero-main img {
   align-self: flex-end;
@@ -497,14 +499,13 @@ font-weight: 500;
 
 @media only screen and (min-width: 650px) {
     /* About us */
-
-
 .about-us p {
   max-width: 80%;
 }
 }
 
 @media only screen and (min-width: 800px) {
+  /*Hero section */
   .hero-main {
     padding-left: 100px;
   }
@@ -576,9 +577,6 @@ font-weight: 500;
   }
 }
 
-/*Footer link */
-
-/*Footer box*/
 
 /* ~~~~~~~~~~~~~~ Media Queries Contact page ~~~~~~~~~~~~~~~~ */
 
@@ -642,10 +640,6 @@ font-weight: 500;
 
 
 @media only screen and (min-width: 620px) {
-
-
-
-
 /* Map section */ 
 .map-section {
   display: grid;
